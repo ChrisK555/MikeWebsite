@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Handyman & Landscaping</title>
+    <link rel="icon" type="image/png" href="images/ui/flavicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID_HERE'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <!-- Facebook SDK for JS -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+
+    <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-slate-50/90 backdrop-blur-sm">
+        <div id="nav-container" class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center transition-all duration-300">
+            <div id="nav-logo-container" class="font-bold text-2xl tracking-tight text-blue-700 relative flex items-center transition-colors duration-300">
+                <img id="nav-logo-img" src="images/ui/logo.png" alt="CITY HANDYMAN" class="h-12 w-auto transition-all duration-300 origin-left">
+                <span id="nav-logo-text" class="absolute left-0 opacity-0 -translate-x-4 transition-all duration-300 pointer-events-none whitespace-nowrap">CITY HANDYMAN</span>
+            </div>
+            <a id="nav-cta" href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 transition shadow-md">Get a Quote</a>
+        </div>
+    </nav>
+
+    <section class="max-w-7xl mx-auto px-6 pt-32 pb-16 md:pt-40 md:pb-24 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">Licensed & Insured</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold mt-4 leading-tight">Expert Home Repairs & Landscaping.</h1>
+            <p class="text-lg text-slate-600 mt-6">From deck construction to yard maintenance, we handle the hard work so you don't have to. Serving the greater Treasure Valley and surrounding areas with quality you can trust.</p>
+            <div class="mt-8 flex gap-4">
+                <a href="#gallery" class="border-2 border-slate-300 px-6 py-3 rounded-lg font-bold hover:bg-slate-100">View Projects</a>
+                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold shadow-lg shadow-blue-200">Get Quote</a>
+            </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <img src="images/ui/hero_image.png" alt="Construction Work" class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <section id="about" class="bg-white py-20 px-6 shadow-sm relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">About Us</h2>
+            <p class="text-lg text-slate-600 leading-relaxed">
+                Welcome to City Handyman, your trusted partner for home improvement and landscaping in the greater Treasure Valley. We are a locally owned and operated business dedicated to delivering high-quality craftsmanship and exceptional customer service. Whether you are looking to build a new deck, install fencing, or need general home repairs, our licensed and insured team has the expertise to get the job done right. We take pride in our work and treat every property with the care and respect it deserves.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="hidden bg-white py-20 px-6 shadow-sm relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Our Services</h2>
+                <p class="text-slate-600 mt-4 max-w-2xl mx-auto">We provide a wide range of professional services to enhance your home and property.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-50 p-6 rounded-xl hover:shadow-md transition text-center group border border-slate-100">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Decks & Patios</h3>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-slate-50 p-6 rounded-xl hover:shadow-md transition text-center group border border-slate-100">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 8.25v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 20.25v-12A2.25 2.25 0 013.75 6zM13.5 6A2.25 2.25 0 0115.75 8.25v12a2.25 2.25 0 01-2.25 2.25h-.75a2.25 2.25 0 01-2.25-2.25v-12A2.25 2.25 0 0112.75 6h.75zM8.25 6A2.25 2.25 0 0110.5 8.25v12a2.25 2.25 0 01-2.25 2.25h-.75a2.25 2.25 0 01-2.25-2.25v-12A2.25 2.25 0 017.5 6h.75zM18.75 6A2.25 2.25 0 0121 8.25v12a2.25 2.25 0 01-2.25 2.25h-.75a2.25 2.25 0 01-2.25-2.25v-12A2.25 2.25 0 0118 6h.75z" /></svg>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Fencing</h3>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-50 p-6 rounded-xl hover:shadow-md transition text-center group border border-slate-100">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Landscaping</h3>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-50 p-6 rounded-xl hover:shadow-md transition text-center group border border-slate-100">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.794-.476l-2.97-2.97a2.548 2.548 0 010-3.586l.565-.565A2.548 2.548 0 019.637 3.29l2.97 2.97c.6.6.929 1.382.929 2.232 0 .851-.329 1.634-.929 2.232l-1.794 1.794m-3.536 3.536l-1.794 1.794c-.6.6-1.382.929-2.232.929-.851 0-1.634-.329-2.232-.929l-.565-.565a2.548 2.548 0 010-3.586l2.97-2.97" /></svg>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Handyman Repairs</h3>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-50 p-6 rounded-xl hover:shadow-md transition text-center group border border-slate-100">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" /></svg>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Construction</h3>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-blue-600 p-6 rounded-xl shadow-md hover:shadow-lg transition text-center group flex flex-col justify-center items-center h-full transform hover:-translate-y-1">
+                    <h3 class="font-bold text-xl text-white">And Much More...</h3>
+                    <p class="text-blue-100 text-sm mt-2">Contact us for custom projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Our Recent Work</h2>
+            
+            <!-- Carousel Container -->
+            <div id="carousel-container" class="relative w-full h-[400px] md:h-[600px] bg-slate-200 rounded-xl overflow-hidden shadow-xl group hidden">
+                <!-- Progress Bar -->
+                <div id="progress-bar" class="absolute top-0 left-0 h-1 bg-blue-500 z-20 w-0"></div>
+                <img id="carousel-img" src="" alt="Gallery Image" class="w-full h-full object-cover cursor-pointer transition-opacity duration-300 opacity-100">
+                
+                <!-- Caption -->
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white pointer-events-none">
+                    <h3 id="carousel-caption" class="text-xl font-bold drop-shadow-md"></h3>
+                </div>
+
+                <!-- Arrows -->
+                <button onclick="changeSlide(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-3 rounded-full backdrop-blur-sm transition opacity-100 md:opacity-0 md:group-hover:opacity-100 z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+                </button>
+                <button onclick="changeSlide(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-3 rounded-full backdrop-blur-sm transition opacity-100 md:opacity-0 md:group-hover:opacity-100 z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+                </button>
+            </div>
+
+            <div id="gallery-loading" class="text-center text-slate-500 italic py-12">Loading gallery...</div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="hidden bg-white py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-slate-900">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-50 p-8 rounded-xl shadow-sm border border-slate-100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Mike did an amazing job on our new deck. The attention to detail was incredible and he finished ahead of schedule."</p>
+                    <div class="font-bold text-slate-900">- Sarah J.</div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-50 p-8 rounded-xl shadow-sm border border-slate-100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Highly recommend for landscaping. Transformed our backyard completely. Very professional and reliable."</p>
+                    <div class="font-bold text-slate-900">- Mark T.</div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-50 p-8 rounded-xl shadow-sm border border-slate-100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
+                    </div>
+                    <p class="text-slate-600 mb-6 italic">"Great experience with the handyman services. Fixed our fence and some drywall issues quickly. Will call again."</p>
+                    <div class="font-bold text-slate-900">- Emily R.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-3xl mx-auto px-6 py-20">
+        <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-100">
+            <div class="text-center mb-10 border-b border-slate-100 pb-10">
+                <h2 class="text-3xl font-bold mb-4 text-slate-900">Contact Us</h2>
+                <p class="text-slate-600 mb-6">Call or email us directly, or fill out the quote form below.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="tel:2085550123" class="flex items-center justify-center gap-2 text-blue-700 font-bold hover:bg-blue-50 px-4 py-2 rounded-lg transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                          <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 5.25V4.5z" clip-rule="evenodd" />
+                        </svg>
+                        (208) 555-0123
+                    </a>
+                    <a href="mailto:info@cityhandyman.com" class="flex items-center justify-center gap-2 text-blue-700 font-bold hover:bg-blue-50 px-4 py-2 rounded-lg transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                          <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                          <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                        </svg>
+                        info@cityhandyman.com
+                    </a>
+                </div>
+            </div>
+            
+            <h3 class="text-2xl font-bold mb-6 text-center">Request a Quote</h3>
+            <!-- Netlify Form: data-netlify="true" handles the backend automatically -->
+            <form name="quote" method="POST" data-netlify="true" enctype="multipart/form-data" class="space-y-6" onsubmit="handleFormSubmit(event)">
+                <input type="hidden" name="form-name" value="quote">
+                
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Full Name <span class="text-red-500">*</span></label>
+                    <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none transition">
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Email</label>
+                        <input type="email" name="email" id="contact-email" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Phone</label>
+                        <input type="tel" name="phone" id="contact-phone" placeholder="(208) 555-0123" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none transition">
+                    </div>
+                </div>
+                <p id="contact-error" class="text-red-500 text-sm hidden">Please provide either an email or a phone number.</p>
+
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Project Description <span class="text-red-500">*</span></label>
+                    <textarea name="description" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none transition"></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Attach Photos (Optional)</label>
+                    <input type="file" name="photos" multiple accept="image/*" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition shadow-lg shadow-blue-200">Send Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-4">
+            <!-- Facebook Like/Share Button -->
+            <div class="fb-like" data-href="https://www.facebook.com/YOUR_PAGE_NAME" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+        </div>
+        <div class="flex items-center gap-6">
+            <a href="https://www.facebook.com/YOUR_PAGE_NAME" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-600 transition">
+                <span class="sr-only">Facebook</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <p class="text-slate-400 text-sm">&copy; 2026 City Handyman. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-black/95 hidden flex justify-center items-center p-4 backdrop-blur-sm" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white/80 hover:text-white transition">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-10 h-10"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+        <img id="lightbox-img" src="" class="max-w-full max-h-[90vh] rounded shadow-2xl object-contain" onclick="event.stopPropagation()">
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 z-[100] bg-black/50 hidden flex justify-center items-center p-4 backdrop-blur-sm">
+        <div class="bg-white p-8 rounded-2xl shadow-xl text-center max-w-md w-full border border-slate-100">
+            <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+            </div>
+            <h2 class="text-2xl font-bold mb-4 text-slate-800">Request Received!</h2>
+            <p class="text-slate-600 mb-6">Thanks for reaching out. We have received your quote request and will get back to you shortly.</p>
+            <button onclick="closeSuccessModal()" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition shadow-lg shadow-blue-200">Close</button>
+        </div>
+    </div>
+
+    <script>
+        let galleryImages = [];
+        let currentIndex = 0;
+        let autoRotateTimer;
+        let restartTimer;
+
+        // Swipe Support
+        let touchStartX = 0;
+        let currentTouchX = 0;
+        let isDragging = false;
+        const carousel = document.getElementById('carousel-container');
+
+        carousel.addEventListener('touchstart', e => {
+            touchStartX = e.touches[0].clientX;
+            currentTouchX = touchStartX;
+            isDragging = true;
+            stopAutoRotate();
+            
+            // Remove transition for direct 1:1 movement
+            const img = document.getElementById('carousel-img');
+            img.style.transition = 'none';
+        }, {passive: true});
+
+        carousel.addEventListener('touchmove', e => {
+            if (!isDragging) return;
+            currentTouchX = e.touches[0].clientX;
+            const diff = currentTouchX - touchStartX;
+            const img = document.getElementById('carousel-img');
+            img.style.transform = `translateX(${diff}px)`;
+        }, {passive: true});
+
+        carousel.addEventListener('touchend', e => {
+            if (!isDragging) return;
+            isDragging = false;
+            const diff = currentTouchX - touchStartX;
+            const img = document.getElementById('carousel-img');
+            
+            // Restore transition for smooth snap/change
+            img.style.transition = 'transform 0.3s ease-out, opacity 0.3s ease-in-out';
+            
+            if (Math.abs(diff) > 50) {
+                // Swipe threshold met - move off screen then change
+                const direction = diff > 0 ? -1 : 1; // Right swipe (pos) -> Prev, Left swipe (neg) -> Next
+                img.style.transform = `translateX(${diff > 0 ? '100%' : '-100%'})`;
+                img.style.opacity = '0';
+                setTimeout(() => changeSlide(direction), 300);
+            } else {
+                // Snap back
+                img.style.transform = 'translateX(0)';
+                img.style.opacity = '1';
+            }
+        }, {passive: true});
+
+        // Gallery Loader
+        fetch('gallery.json')
+            .then(response => {
+                if (!response.ok) throw new Error("Gallery index not found");
+                return response.json();
+            })
+            .then(images => {
+                galleryImages = images;
+                const loadingDiv = document.getElementById('gallery-loading');
+                const carouselDiv = document.getElementById('carousel-container');
+
+                if (galleryImages.length > 0) {
+                    loadingDiv.classList.add('hidden');
+                    carouselDiv.classList.remove('hidden');
+                    
+                    // Initialize Carousel
+                    showSlide(0);
+                    startAutoRotate();
+
+                    // Setup Lightbox Trigger
+                    document.getElementById('carousel-img').addEventListener('click', () => {
+                        const lightbox = document.getElementById('lightbox');
+                        const lightboxImg = document.getElementById('lightbox-img');
+                        lightboxImg.src = `images/gallery/${galleryImages[currentIndex]}`;
+                        lightbox.classList.remove('hidden');
+                        stopAutoRotate();
+                    });
+                } else {
+                    loadingDiv.innerHTML = 'No images found in gallery.';
+                }
+            })
+            .catch(err => {
+                console.log('Gallery load error:', err);
+                const loadingDiv = document.getElementById('gallery-loading');
+                loadingDiv.innerHTML = `
+                    <div class="text-center text-slate-500 py-8">
+                        <p class="font-bold text-red-500 mb-2">Gallery could not load locally</p>
+                        <p class="text-sm">Browsers block reading local files (CORS). To view the gallery:</p>
+                        <ul class="text-sm mt-2 list-disc list-inside">
+                            <li>Run <code>node build-gallery.js</code> to generate the index</li>
+                            <li>Open this file using a local server (like VS Code Live Server)</li>
+                        </ul>
+                    </div>
+                `;
+            });
+
+        function getSmartTitle(filename) {
+            let title = filename.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ");
+            return title.replace(/\b\w/g, l => l.toUpperCase());
+        }
+
+        function showSlide(index) {
+            if (index >= galleryImages.length) currentIndex = 0;
+            else if (index < 0) currentIndex = galleryImages.length - 1;
+            else currentIndex = index;
+
+            const filename = galleryImages[currentIndex];
+            const img = document.getElementById('carousel-img');
+            const caption = document.getElementById('carousel-caption');
+            
+            // Fade out, swap, fade in
+            img.style.opacity = '0';
+            setTimeout(() => {
+                img.src = `images/gallery/${filename}`;
+                caption.textContent = getSmartTitle(filename);
+                
+                // Reset transform and transition for the new image
+                img.style.transition = 'none';
+                img.style.transform = 'translateX(0)';
+                void img.offsetWidth; // Force reflow
+                img.style.transition = 'opacity 0.3s ease-in-out';
+                img.style.opacity = '1';
+            }, 300);
+        }
+
+        function changeSlide(direction) {
+            stopAutoRotate();
+            showSlide(currentIndex + direction);
+            // Restart auto rotate after 5 seconds of inactivity
+            clearTimeout(restartTimer);
+            restartTimer = setTimeout(startAutoRotate, 5000);
+        }
+
+        function startAutoRotate() {
+            stopAutoRotate();
+            resetProgressBar();
+            autoRotateTimer = setInterval(() => {
+                showSlide(currentIndex + 1);
+                resetProgressBar();
+            }, 4000);
+        }
+
+        function stopAutoRotate() {
+            clearInterval(autoRotateTimer);
+            const bar = document.getElementById('progress-bar');
+            if (bar) {
+                bar.style.transition = 'none';
+                bar.style.width = '0%';
+            }
+        }
+
+        function resetProgressBar() {
+            const bar = document.getElementById('progress-bar');
+            if (!bar) return;
+            bar.style.transition = 'none';
+            bar.style.width = '0%';
+            void bar.offsetWidth; // Force reflow
+            bar.style.transition = 'width 4000ms linear';
+            bar.style.width = '100%';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+            startAutoRotate();
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            if (!validateContact()) return;
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            // Security: Sanitize inputs to prevent code injection
+            // We iterate through text fields and strip potential HTML tags (< and >)
+            for (const [key, value] of Array.from(formData.entries())) {
+                if (typeof value === 'string') {
+                    const sanitized = value.replace(/[<>]/g, ""); 
+                    formData.set(key, sanitized);
+                }
+            }
+
+            fetch("/", {
+                method: "POST",
+                body: formData
+            })
+            .then(() => {
+                document.getElementById('success-modal').classList.remove('hidden');
+                form.reset();
+            })
+            .catch(error => alert("Error submitting form: " + error));
+        }
+
+        function closeSuccessModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+        }
+
+        // Form Validation
+        function validateContact() {
+            const email = document.getElementById('contact-email').value;
+            const phone = document.getElementById('contact-phone').value;
+            const errorMsg = document.getElementById('contact-error');
+            
+            // Reset error message
+            errorMsg.classList.add('hidden');
+
+            // 1. Check if at least one contact method is provided
+            if (!email && !phone) {
+                errorMsg.textContent = "Please provide either an email or a phone number.";
+                errorMsg.classList.remove('hidden');
+                return false;
+            }
+
+            // 2. Validate Phone Number (must have at least 10 digits if provided)
+            if (phone && phone.replace(/\D/g, '').length < 10) {
+                errorMsg.textContent = "Please enter a valid phone number (at least 10 digits).";
+                errorMsg.classList.remove('hidden');
+                return false;
+            }
+
+            return true;
+        }
+
+        // Sticky Nav Animation
+        const nav = document.getElementById('main-nav');
+        const navContainer = document.getElementById('nav-container');
+        const logoContainer = document.getElementById('nav-logo-container');
+        const logoImg = document.getElementById('nav-logo-img');
+        const logoText = document.getElementById('nav-logo-text');
+        const navCta = document.getElementById('nav-cta');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                // Scrolled State
+                nav.classList.add('shadow-md', 'bg-blue-700/95');
+                nav.classList.remove('bg-slate-50/90');
+                
+                navContainer.classList.remove('py-6');
+                navContainer.classList.add('py-2');
+
+                logoContainer.classList.remove('text-blue-700');
+                logoContainer.classList.add('text-white');
+
+                navCta.classList.remove('bg-blue-600', 'text-white', 'hover:bg-blue-700');
+                navCta.classList.add('bg-white', 'text-blue-700', 'hover:bg-slate-100');
+
+                logoImg.classList.add('opacity-0', 'scale-75');
+                logoText.classList.remove('opacity-0', '-translate-x-4');
+                logoText.classList.add('opacity-100', 'translate-x-0');
+            } else {
+                // Top State
+                nav.classList.remove('shadow-md', 'bg-blue-700/95');
+                nav.classList.add('bg-slate-50/90');
+
+                navContainer.classList.add('py-6');
+                navContainer.classList.remove('py-2');
+
+                logoContainer.classList.add('text-blue-700');
+                logoContainer.classList.remove('text-white');
+
+                navCta.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700');
+                navCta.classList.remove('bg-white', 'text-blue-700', 'hover:bg-slate-100');
+
+                logoImg.classList.remove('opacity-0', 'scale-75');
+                logoText.classList.add('opacity-0', '-translate-x-4');
+                logoText.classList.remove('opacity-100', 'translate-x-0');
+            }
+        });
+    </script>
+
+</body>
+</html>

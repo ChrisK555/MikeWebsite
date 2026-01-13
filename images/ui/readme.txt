@@ -1,0 +1,1 @@
+This subdirectory /images/ui is for website UI images such as the company logo or main background.

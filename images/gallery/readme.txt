@@ -1,0 +1,1 @@
+This subdirectory /images/galley is just a list of images you want to showcase, feel free to add or remove as many as you want
