@@ -321,30 +321,30 @@
                 <input type="hidden" name="form-name" value="quote">
                 
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-widest text-neutral-500 mb-2">Name <span class="text-red-500">*</span></label>
-                    <input type="text" name="name" required class="w-full px-4 py-3 rounded-none border border-neutral-300 focus:border-neutral-900 focus:ring-0 outline-none transition bg-neutral-50">
+                    <label for="contact-name" class="block text-xs font-bold uppercase tracking-widest text-neutral-500 mb-2">Name <span class="text-red-500">*</span></label>
+                    <input id="contact-name" type="text" name="name" required class="w-full px-4 py-3 rounded-none border border-neutral-300 focus:border-neutral-900 focus:ring-0 outline-none transition bg-neutral-50">
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-widest text-neutral-500 mb-2">Email</label>
+                        <label for="contact-email" class="block text-xs font-bold uppercase tracking-widest text-neutral-500 mb-2">Email</label>
                         <input type="email" name="email" id="contact-email" class="w-full px-4 py-3 rounded-none border border-neutral-300 focus:border-neutral-900 focus:ring-0 outline-none transition bg-neutral-50">
                     </div>
                     <div>
-                        <label class="block text-xs font-bold uppercase tracking-widest text-neutral-500 mb-2">Phone</label>
+                        <label for="contact-phone" class="block text-xs font-bold uppercase tracking-widest text-neutral-500 mb-2">Phone</label>
                         <input type="tel" name="phone" id="contact-phone" placeholder="(208) 999-6446" class="w-full px-4 py-3 rounded-none border border-neutral-300 focus:border-neutral-900 focus:ring-0 outline-none transition bg-neutral-50">
                     </div>
                 </div>
                 <p id="contact-error" class="text-red-500 text-sm hidden">Please provide either an email or a phone number.</p>
 
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-widest text-neutral-500 mb-2">Project Description <span class="text-red-500">*</span></label>
-                    <textarea name="description" rows="4" required class="w-full px-4 py-3 rounded-none border border-neutral-300 focus:border-neutral-900 focus:ring-0 outline-none transition bg-neutral-50"></textarea>
+                    <label for="contact-description" class="block text-xs font-bold uppercase tracking-widest text-neutral-500 mb-2">Project Description <span class="text-red-500">*</span></label>
+                    <textarea id="contact-description" name="description" rows="4" required class="w-full px-4 py-3 rounded-none border border-neutral-300 focus:border-neutral-900 focus:ring-0 outline-none transition bg-neutral-50"></textarea>
                 </div>
 
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-widest text-neutral-500 mb-2">Attach Photos (Optional)</label>
-                    <input type="file" name="photos" multiple accept="image/*" class="w-full text-sm text-neutral-500 file:mr-4 file:py-3 file:px-6 file:rounded-none file:border-0 file:text-xs file:font-bold file:uppercase file:tracking-widest file:bg-neutral-900 file:text-white hover:file:bg-neutral-700">
+                    <label for="contact-photos" class="block text-xs font-bold uppercase tracking-widest text-neutral-500 mb-2">Attach Photos (Optional)</label>
+                    <input id="contact-photos" type="file" name="photos" multiple accept="image/*" class="w-full text-sm text-neutral-500 file:mr-4 file:py-3 file:px-6 file:rounded-none file:border-0 file:text-xs file:font-bold file:uppercase file:tracking-widest file:bg-neutral-900 file:text-white hover:file:bg-neutral-700">
                 </div>
 
                 <button type="submit" class="w-full bg-neutral-900 text-white font-bold uppercase tracking-widest py-4 rounded-none hover:bg-neutral-800 transition">Send Request</button>
@@ -359,23 +359,23 @@
                 <div class="fb-like" data-href="https://www.facebook.com/profile.php?id=61583254037704" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
             </div>
             <div class="flex items-center gap-6">
-                <a href="https://www.facebook.com/profile.php?id=61583254037704" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-neutral-900 transition">
+                <a href="https://www.facebook.com/profile.php?id=61583254037704" target="_blank" rel="noopener noreferrer" class="text-neutral-600 hover:text-neutral-900 transition">
                     <span class="sr-only">Facebook</span>
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
                     </svg>
                 </a>
-                <a href="https://nextdoor.com/pages/kemsley-construction-llc/" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-neutral-900 transition">
+                <a href="https://nextdoor.com/pages/kemsley-construction-llc/" target="_blank" rel="noopener noreferrer" class="text-neutral-600 hover:text-neutral-900 transition">
                     <span class="sr-only">Nextdoor</span>
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M16.637 0H7.363v2.693h9.274C19.653 2.693 22 5.176 22 8.128v15.872h-2.54V8.128c0-1.55-1.23-2.808-2.823-2.808h-4.724v18.68H9.372V5.32H2.54V24h19.46V8.128c0-4.435-3.49-8.128-7.363-8.128z"/>
                     </svg>
                 </a>
-                <a href="https://www.bbb.org/us/id/boise/profile/remodeling/american-home-repairs-llc-1296-1000181320" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-neutral-900 transition font-bold flex items-center gap-1">
+                <a href="https://www.bbb.org/us/id/boise/profile/remodeling/american-home-repairs-llc-1296-1000181320" target="_blank" rel="noopener noreferrer" class="text-neutral-600 hover:text-neutral-900 transition font-bold flex items-center gap-1">
                     <span class="sr-only">BBB</span>
                     <span class="text-xs tracking-widest border border-current px-1 rounded">BBB</span>
                 </a>
-                <p class="text-neutral-500 text-xs uppercase tracking-widest">&copy; 2026 Kemsley Construction LLC.</p>
+                <p class="text-neutral-600 text-xs uppercase tracking-widest">&copy; 2026 Kemsley Construction LLC.</p>
             </div>
         </div>
     </footer>
