@@ -6,18 +6,17 @@
     <meta name="description" content="Kemsley Construction offers professional home remodels, handyman services, siding, and custom builds in the Treasure Valley. Family-owned quality craftsmanship you can trust.">
     <meta name="keywords" content="Kemsley Construction, remodel company, handyman, home remodels, siding, windows, shops, garages, construction, Treasure Valley, Boise">
     <title>Kemsley Construction - Professional Building Services</title>
-    <link rel="icon" type="image/jpeg" href="images/ui/logo.jpg?v=1">
+    <link rel="icon" type="image/webp" href="images/ui/logo.webp?v=1">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-neutral-800 font-sans antialiased selection:bg-neutral-900 selection:text-white">
     <!-- Facebook SDK for JS -->
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
 
     <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
         <div id="nav-container" class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center transition-all duration-300">
             <div id="nav-logo-container" class="relative flex items-center transition-all duration-300 bg-white/90 p-2 rounded">
-                <img src="images/ui/header_logo.png" alt="Kemsley Construction" class="h-12 w-auto">
+                <img src="images/ui/header_logo.png" alt="Kemsley Construction" class="h-12 w-auto" width="180" height="48">
             </div>
             <div class="flex items-center gap-8">
                 <div class="hidden md:flex gap-8">
@@ -33,7 +32,7 @@
     <section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
         <!-- Full Width Hero Image -->
         <div class="absolute inset-0 z-0">
-            <img src="images/ui/hero_image.jpg" alt="Modern Construction" class="w-full h-full object-cover">
+            <img src="images/ui/hero_image.webp" alt="Modern Construction" class="w-full h-full object-cover" width="1920" height="1080">
             <div class="absolute inset-0 bg-neutral-900/50"></div>
         </div>
         
@@ -68,7 +67,7 @@
             <div class="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
                 <div class="relative">
                     <div class="aspect-[3/4] bg-neutral-100 relative overflow-hidden shadow-lg w-[95%] mx-auto">
-                        <img src="images/ui/MikeActionShot.jpg" alt="Mike Kemsley" class="w-full h-full object-cover">
+                        <img src="images/ui/MikeActionShot.webp" alt="Mike Kemsley" class="w-full h-full object-cover" width="600" height="800">
                     </div>
                 </div>
                 <div>
@@ -219,11 +218,11 @@
                 <div id="progress-bar" class="absolute top-0 left-0 h-1 bg-white z-30 w-0"></div>
                 
                 <!-- Blurred Background -->
-                <img id="carousel-bg" src="" alt="" class="absolute inset-0 w-full h-full object-cover opacity-30 blur-xl scale-110 transition-opacity duration-300">
+                <img id="carousel-bg" src="" alt="" class="absolute inset-0 w-full h-full object-cover opacity-30 blur-xl scale-110 transition-opacity duration-300" width="1200" height="800">
 
                 <!-- Main Image -->
                 <div class="absolute inset-0 z-10 flex items-center justify-center p-4 md:p-8">
-                    <img id="carousel-img" src="" alt="Gallery Image" class="max-w-full max-h-full object-contain shadow-2xl cursor-pointer transition-opacity duration-300 opacity-100">
+                    <img id="carousel-img" src="" alt="Gallery Image" class="max-w-full max-h-full object-contain shadow-2xl cursor-pointer transition-opacity duration-300 opacity-100" width="1200" height="800">
                 </div>
                 
                 <!-- Arrows -->
@@ -409,6 +408,29 @@
         let currentIndex = 0;
         let autoRotateTimer;
         let restartTimer;
+
+        // Lazy Load Facebook SDK
+        function loadFacebookSDK() {
+            if (document.getElementById('facebook-jssdk')) return;
+            const js = document.createElement('script');
+            js.id = 'facebook-jssdk';
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0";
+            js.crossOrigin = "anonymous";
+            document.body.appendChild(js);
+        }
+
+        // Load Facebook SDK when footer is near viewport
+        const footerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    loadFacebookSDK();
+                    footerObserver.disconnect();
+                }
+            });
+        }, { rootMargin: '200px' });
+        
+        const footer = document.querySelector('footer');
+        if (footer) footerObserver.observe(footer);
 
         // Swipe Support
         let touchStartX = 0;

@@ -11,3 +11,8 @@ To update the photos in the gallery carousel:
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\build-gallery.ps1
 ```
+
+
+Images are converted into smaller webp files for efficiency using the following command within this directory:
+
+Get-ChildItem -Filter *.jpg | ForEach-Object { ./cwebp.exe -q 80 $_.Name -o ($_.BaseName + ".webp") }
