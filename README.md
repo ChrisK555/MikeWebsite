@@ -1,6 +1,6 @@
 # Kemsley Construction Website
 
-This repository contains the source code for the Kemsley Construction website. It is a static site designed to showcase construction services and portfolio projects.
+This repository contains the source code for the [Kemsley Construction website](http://kemsleyconstruction.com/). It is a static site designed to showcase construction services and portfolio projects.
 
 ## How to Update Gallery Images
 
