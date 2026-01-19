@@ -10,7 +10,7 @@ console.log('Building gallery index...');
 if (fs.existsSync(galleryDir)) {
     // Read directory and filter for image files
     const files = fs.readdirSync(galleryDir).filter(file => {
-        return /\.(jpg|jpeg|png|gif|webp)$/i.test(file);
+        return /\.(jpg|jpeg|png|gif|webp|svg|bmp|tiff)$/i.test(file);
     });
     
     // Write the list of filenames to a JSON file
